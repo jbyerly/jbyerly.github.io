@@ -1,66 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+   <meta charset="UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calvary Road</title>
     <link rel="stylesheet" href="style.css">
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+    <!-- Your fonts and additional links -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Calvary Road</title>
-</head>
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="https://private-user-images.githubusercontent.com/47181989/347929205-20c4356e-6e6a-4536-b797-0375c2870f57.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA3MjEwNDQsIm5iZiI6MTcyMDcyMDc0NCwicGF0aCI6Ii80NzE4MTk4OS8zNDc5MjkyMDUtMjBjNDM1NmUtNmU2YS00NTM2LWI3OTctMDM3NWMyODcwZjU3LmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzExVDE3NTkwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWVlNTc4ZjFmMDUwZTgzYWUwZmMzNzFlM2U4ZTJjYTRlZjdiMzQ1NjM1NjQwYzJiZTQyNGMzZDI5MTY5OTU5MDcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.5XmCT4ySr0EWzfIaioOXoUaSWI4mdeuB9xZ8tKdINGY" alt="logo">
-                </a>
-            </div>            
-            <div class="main-menu">
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>        
-                        </li>
-                        <li>
-                            <a href="#">About</a>        
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>        
-                        </li>
-                        <li>
-                            <a class="btn" href="#">Giving</a>        
-                        </li>
-                    </ul>
-                </div>                
-            </div>
-        </div>    
-    </nav>
-
-    <!--Hero--> 
+  </head>
+  <body>
+    <header id="navbar">
+      <nav class="navbar-container container">
+        <a href="/" class="home-link">
+          <div class="navbar-logo"><img src="image/black-logo.png" alt="logo"></div>
+        
+        </a>
+        <button
+          type="button"
+          id="navbar-toggle"
+          aria-controls="navbar-menu"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div id="navbar-menu" aria-labelledby="navbar-toggle">
+          <ul class="navbar-links">
+            <li class="navbar-item"><a class="navbar-link" href="/about">Home</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="/blog">About</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="/careers">Contact</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="/contact">Giving</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <section class="hero">
-        <div class="overlay-hero"></div>
-        <div class="container">
+       <div class="overlay-hero"></div>
+          <div class="container">
             
-            <div class="hero-content">
-                <h1 class="hero--heading text-xl text-bold">
+               <div class="hero-content">
+                   <h1 class="hero--heading text-xl text-bold">
                     WELCOME TO CALVARY ROAD BAPTIST CHURCH
-                </h1>
-                <p class="hero-text">We are a vibrant, growing, Great Commission focused church located in beautiful Shepherdsville, Kentucky.</p>
-                <div class="hero-button">
-                    <a href="" class="btn btn-primary">New to Church</a>
+                   </h1>
+                      <p class="hero-text">We are a vibrant, growing, Great Commission focused church located in beautiful Shepherdsville, Kentucky.</p>
+                   <div class="hero-button">
+                      <a href="visitors.html" class="btn btn-primary">New to Church</a>
+                   </div>
                 </div>
-            </div>
             <div class="hero-video fill-content">  
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y9sv19aCODM" title="Calvary Road Baptist Church Live Stream" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-        </div>            
-        
-        
+           </div>
+        </div>
     </section>
 
-    <!-- Events -->
+        <!-- Events -->
 
     <section class="events">
         <div class="container">
@@ -77,19 +80,21 @@
                     <div class="event-col-loc">
                         <div class="event-col-text">
                             <!--<div class="iconfont-wrapper">
-								<span class="amp-iconfont fa fa-map-marker"><svg width="16" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="white"><path d="M1152 640q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm256 0q0 109-33 179l-364 774q-16 33-47.5 52t-67.5 19-67.5-19-46.5-52l-365-774q-33-70-33-179 0-212 150-362t362-150 362 150 150 362z"></path></svg></span>
-							</div>-->
-                            <p class="text-w text-sm-i">Calvary Road Baptist Church</p>
+                            <span class="amp-iconfont fa fa-map-marker"><svg width="16" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="white"><path d="M1152 640q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm256 0q0 109-33 179l-364 774q-16 33-47.5 52t-67.5 19-67.5-19-46.5-52l-365-774q-33-70-33-179 0-212 150-362t362-150 362 150 150 362z"></path></svg></span>
+                           </div> -->
+                            <p class="text-w text-sm-i text-center">Calvary Road Baptist Church</p>
                 
-                            <p class="text-w text-sm-i">2120 Raymond Rd. Shepherdsville, KY 40165 </p>
+                            <p class="text-w text-sm-i text-center">2120 Raymond Rd. Shepherdsville, KY 40165 </p>
                         </div>
-                
-                    </div>
-                    <div class="event-col-btn btn btn-light text-center">Contact Us</div>
+                   
                 </div>
+                 </div>
+                    <div class="event-col-btn btn btn-light text-center btn-height">Contact Us</div>
             </div>    
         </div>
     </section>
+
+
 
     <!-- People -->
     <section class="people">
@@ -99,7 +104,7 @@
             </div>
             <div class="people-row">
                 <div class="card-wrapper text-center">
-                    <div class="card-box">
+                    <div class="card-box text-center ">
                         <div class="iconfont-wrapper">
                             <span class="amp-iconfont fa fa-pagelines"><svg width="40" height="40" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="#733432"><path d="M1594 1103q-32 80-76 138t-91 88.5-99 46.5-101.5 14.5-96.5-8.5-86.5-22-69.5-27.5-46-22.5l-17-10q-113 228-289.5 359.5t-384.5 132.5q-19 0-32-13t-13-32 13-31.5 32-12.5q173-1 322.5-107.5t251.5-294.5q-36 14-72 23t-83 13-91-2.5-93-28.5-92-59-84.5-100-74.5-146q114-47 214-57t167.5 7.5 124.5 56.5 88.5 77 56.5 82q53-131 79-291-7 1-18 2.5t-46.5 2.5-69.5-.5-81.5-10-88.5-23-84-42.5-75-65-54.5-94.5-28.5-127.5q70-28 133.5-36.5t112.5 1 92 30 73.5 50 56 61 42 63 27.5 56 16 39.5l4 16q12-122 12-195-8-6-21.5-16t-49-44.5-63.5-71.5-54-93-33-112.5 12-127 70-138.5q73 25 127.5 61.5t84.5 76.5 48 85 20.5 89-.5 85.5-13 76.5-19 62-17 42l-7 15q1 4 1 50t-1 72q3-7 10-18.5t30.5-43 50.5-58 71-55.5 91.5-44.5 112-14.5 132.5 24q-2 78-21.5 141.5t-50 104.5-69.5 71.5-81.5 45.5-84.5 24-80 9.5-67.5-1-46.5-4.5l-17-3q-23 147-73 283 6-7 18-18.5t49.5-41 77.5-52.5 99.5-42 117.5-20 129 23.5 137 77.5z"></path></svg></span>
                         </div>
@@ -131,33 +136,143 @@
         </div>
     </section>
 
-    <!-- New To Church -->
-    <section class="people2"></section>
-
-    <!-- Event Calendar -->
-    <section class="people3"></section>
-
-    <!-- Internal Links -->
+        <!-- Internal Links -->
 
     <section class="links">
         <div class="container-full">
             <div class="links-row">
                 <div class="links-wrapper card1">
-                    <div class="links-card text-center text-w">xfzgdgdsgsdgdfgsdfasdfsa</div>
+                    <div class="custom-card custom-card1 mbr-white">
+                        <h3 class="custom-card-heading card1-title mbr-text mbr-fonts-style display-5">Our Beliefs</h3>
+                        <p class="custom-card-text card1-text mbr-text mbr-fonts-style display-7">
+                            We want you to know exactly what we believe and why we believe it. 
+                        </p>
+                        <p>Visit our beliefs page to see what we believe.</p>
+                        <div>
+                            <p class="custom-card-link mbr-fonts-style card1-link display-7">
+                                <a href="beliefs.html" class="text-white">Read More</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="links-wrapper card2">
-                    <div class="links-card text-center text-w">xfzgdgdsgsdgdfgsdfasdfsa</div>
+                    <div class="custom-card custom-card2 mbr-white">
+                        <h3 class="custom-card-heading card2-title mbr-text mbr-fonts-style display-5">Our Ministries</h3>
+                        <p class="custom-card-text card2-text mbr-text mbr-fonts-style display-7">
+                            Learn more about the ministries we offer and how you can get involved.
+                        </p>
+                        <div>
+                            <p class="custom-card-link mbr-fonts-style card2-link display-7">
+                                <a href="ministries.html" class="text-white">Learn More</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="links-wrapper card3">
-                    <div class="links-card text-center text-w">xfzgdgdsgsdgdfgsdfasdfsa</div>
+                    <div class="custom-card custom-card2 mbr-white">
+                        <h3 class="custom-card-heading card2-title mbr-text mbr-fonts-style display-5">Livestream</h3>
+                        <p class="custom-card-text card2-text mbr-text mbr-fonts-style display-7">
+                            Learn more about the ministries we offer and how you can get involved.
+                        </p>
+                        <div>
+                            <p class="custom-card-link mbr-fonts-style card2-link display-7">
+                                <a href="ministries.html" class="text-white">Learn More</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="links-wrapper card4">
-                    <div class="links-card text-center text-w">xfzgdgdsgsdgdfgsdfasdfsa</div>
+                    <div class="custom-card custom-card2 mbr-white">
+                        <h3 class="custom-card-heading card2-title mbr-text mbr-fonts-style display-5">Social Media</h3>
+                        <p class="custom-card-text card2-text mbr-text mbr-fonts-style display-7">
+                            Learn more about the ministries we offer and how you can get involved.
+                        </p>
+                        <div>
+                            <p class="custom-card-link mbr-fonts-style card2-link display-7">
+                                <a href="ministries.html" class="text-white">Learn More</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <script src="main.js"></script>    
-</body>
+        <!-- New To Church -->
+    <section class="people2">
+        <div class="container">
+            <h2 class="text-xxxl text-center text-bold text-w">NEW TO CHURCH?</h2>
+            <div class="hero-button text-center">
+                <a href="visitors.html" class="btn btn-primary">What to expect</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Calendar -->
+    <section class="people3">
+        <div class="container">
+            <h2 class="text-xxxl text-center">Our Events</h2>
+            <div class="hero-button text-center">
+                <a href="calendar.html" class="btn btn-primary">Calendar</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Left Section -->
+                <div class="footer-left">
+                    <h3>Contact Us</h3>
+                    <br>
+                    <div class="footer-contact">
+                        <p><strong>Address:</strong> 2120 Raymond Rd., Shepherdsville, KY 40165</p>
+                        <br>
+                        <p><strong>Phone:</strong> 270-683-1890</p>
+                        <br>
+                        <p><strong>Email:</strong> <a href="mailto:info@crbc.com" style="color: white; text-decoration: none;">info@crbc.com</a></p>
+                    </div>
+                    
+                </div>
+    
+                <!-- Middle Section -->
+                <div class="footer-middle">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="image/white-logo.png" alt="Calvary Road Baptist Church Logo" style="max-height: 90px;">
+                        </a>
+                    </div>
+                    <br>
+                    <div class="footer-service-times">
+                        <p>Sunday: 11:00 AM & 6:00 PM</p>
+                        <p>Wednesday: 7:00 PM</p>
+                    </div>
+                </div>
+    
+                <!-- Right Section -->
+                <div class="footer-right">
+                    <h3>Useful Links</h3>
+                    <br>
+                    <ul>
+                        <li><a class="text-w" href="index.html">Home</a></li>
+                        <li><a class="text-w" href="about.html">About</a></li>
+                        <li><a class="text-w" href="contact.html">Contact</a></li>
+                        <li><a class="text-w" href="visitors.html">Visitors</a></li>
+                        <li><a class="text-w" href="calendar.html">Calendar</a></li>
+                        <li><a class="text-w" href="giving.html">Giving</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Copyright Section -->
+            <div class="footer-copyright">
+                <p>&copy; 2025 Calvary Road Baptist Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+   
+    <script src="main.js"></script>
+  </body>
 </html>
