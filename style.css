@@ -12,7 +12,13 @@
   padding: 0;
 }
 
+* {
+  outline: 1px dashed red;
+}
+
+
 body {
+  width: 100%;  
   height: 100vh;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -287,9 +293,9 @@ body {
 
 .people-row {
     display: flex;
-    /*flex-wrap: wrap;*/
+    /*flex-wrap: wrap;
     margin-right: -1rem;
-    margin-left: -1rem;
+    margin-left: -1rem;*/
     flex-direction: column;
     row-gap: 50px;
     align-content: space-around;
@@ -562,6 +568,7 @@ footer {
 /* Utility Class */
 
 .container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
