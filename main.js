@@ -21,9 +21,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const calendar = new FullCalendar.Calendar(calendarEl, {
       initialView: 'dayGridMonth',
       headerToolbar: {
-        left: 'prev,next today',
+        left: 'prev',
         center: 'title',
-        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+        right: 'next',
+        //right: 'dayGridMonth,timeGridWeek,timeGridDay'
       },
       events: [
         {
@@ -49,13 +50,23 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add more event objects here as needed
       ],
       // Additional configuration such as eventClick or dateClick can enhance interactivity.
-      eventClick: function(info) {
-        alert('Event: ' + info.event.title + starttime);
+
+     dateClick: function(info) {
+      //alert('title ' + info.dateStr);
+      alert('title ' + info.jsEvent.title);
+      alert('Coordinates: ' + info.jsEvent.pageX + ',' + info.jsEvent.pageY);
+      alert('Current view: ' + info.view.type);
+    // change the day's background color just for fun
+      info.dayEl.style.backgroundColor = 'red';
+  }
+      //eventClick: function(info) {
+      //  alert('Event: ' + info.event.title + starttime);
         // Optionally, display more details or link to an event page.
-      }
+      //}
     });
   
     calendar.render();
+    calendar.updateSize();
   });
   
 

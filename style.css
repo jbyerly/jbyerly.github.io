@@ -14,7 +14,7 @@
 
 /* {
   outline: 1px dashed red;
-} */
+}*/
 
 
 body {
@@ -486,6 +486,519 @@ footer {
     margin-top: 2rem;
     text-align: center;
 }
+
+/* Beliefs Page*/
+
+.beliefs {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* From Uiverse.io by ilkhoeri List Item 1*/ 
+.dropdown { 
+  border: 1px solid #c1c2c5;
+  border-radius: 12px;
+  transition: all 300ms;
+  display: flex;
+  flex-direction: column;
+  min-height: 58px;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  inset-inline: auto;
+  max-width: 800px;
+  min-width: 298px;
+}
+.dropdown input:where(:checked) ~ .list {
+  opacity: 1;
+  transform: translateY(-3rem) scale(1);
+  transition: all 500ms ease;
+  margin-top: 32px;
+  padding-top: 4px;
+  margin-bottom: -32px;
+}
+.dropdown input:where(:not(:checked)) ~ .list {
+  opacity: 0;
+  transform: translateY(3rem);
+  margin-top: -100%;
+  user-select: none;
+  height: 0px;
+  max-height: 0px;
+  min-height: 0px;
+  pointer-events: none;
+  transition: all 500ms ease-out;
+}
+.trigger {
+  cursor: pointer;
+  list-style: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  font-weight: 600;
+  color: inherit;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  gap: 1rem;
+  padding: 1rem;
+  height: max-content;
+  position: relative;
+  z-index: 90;
+  border-radius: inherit;
+  background-color: white;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.dropdown input:where(:checked) + .trigger {
+  margin-bottom: 1rem;
+}
+.dropdown input:where(:checked) + .trigger:before {
+  rotate: 90deg;
+  transition-delay: 0ms;
+}
+.dropdown input:where(:checked) + .trigger::after {
+  content: "Close Dropdown";
+}
+
+.trigger:before,
+.trigger::after {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trigger:before {
+  content: "›";
+  rotate: -90deg;
+  width: 17px;
+  height: 17px;
+  color: #262626;
+  border-radius: 2px;
+  font-size: 26px;
+  transition: all 350ms ease;
+  transition-delay: 85ms;
+}
+.trigger::after {
+  content: "Salvation";
+}
+
+/* List Item 2*/
+
+.dropdown1 { 
+  border: 1px solid #c1c2c5;
+  border-radius: 12px;
+  transition: all 300ms;
+  display: flex;
+  flex-direction: column;
+  min-height: 58px;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  inset-inline: auto;
+  max-width: 800px;
+  min-width: 298px;
+  margin-top: 25px;
+}
+.dropdown1 input:where(:checked) ~ .list1 {
+  opacity: 1;
+  transform: translateY(-3rem) scale(1);
+  transition: all 500ms ease;
+  margin-top: 32px;
+  padding-top: 4px;
+  margin-bottom: -32px;
+}
+.dropdown1 input:where(:not(:checked)) ~ .list1 {
+  opacity: 0;
+  transform: translateY(3rem);
+  margin-top: -100%;
+  user-select: none;
+  height: 0px;
+  max-height: 0px;
+  min-height: 0px;
+  pointer-events: none;
+  transition: all 500ms ease-out;
+}
+
+.trigger1 {
+  cursor: pointer;
+  list-style: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  font-weight: 600;
+  color: inherit;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  gap: 1rem;
+  padding: 1rem;
+  height: max-content;
+  position: relative;
+  z-index: 90;
+  border-radius: inherit;
+  background-color: white;
+}
+.sr-only1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.dropdown1 input:where(:checked) + .trigger1 {
+  margin-bottom: 1rem;
+}
+.dropdown1 input:where(:checked) + .trigger1:before {
+  rotate: 90deg;
+  transition-delay: 0ms;
+}
+.dropdown1 input:where(:checked) + .trigger1::after {
+  content: "Close Dropdown";
+}
+
+.trigger1:before,
+.trigger1::after {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trigger1:before {
+  content: "›";
+  rotate: -90deg;
+  width: 17px;
+  height: 17px;
+  color: #262626;
+  border-radius: 2px;
+  font-size: 26px;
+  transition: all 350ms ease;
+  transition-delay: 85ms;
+}
+.trigger1::after {
+  content: "Bible";
+}
+.list1 {
+  height: 100%;
+  max-height: 20rem;
+  width: calc(100% - calc(var(--w-scrollbar) / 2));
+  display: grid;
+  grid-auto-flow: row;
+  overflow: hidden auto;
+  gap: 1rem;
+  padding: 0 1rem;
+  margin-right: -8px;
+  --w-scrollbar: 8px;
+}
+.listitem1 {
+  height: 100%;
+  width: calc(100% + calc(calc(var(--w-scrollbar) / 2) + var(--w-scrollbar)));
+  list-style: none;
+}
+
+/* List Item 3 */
+.dropdown2 { 
+  border: 1px solid #c1c2c5;
+  border-radius: 12px;
+  transition: all 300ms;
+  display: flex;
+  flex-direction: column;
+  min-height: 58px;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  inset-inline: auto;
+  max-width: 800px;
+  min-width: 298px;
+  margin-top: 25px;
+}
+.dropdown2 input:where(:checked) ~ .list2 {
+  opacity: 1;
+  transform: translateY(-3rem) scale(1);
+  transition: all 500ms ease;
+  margin-top: 32px;
+  padding-top: 4px;
+  margin-bottom: -32px;
+}
+.dropdown2 input:where(:not(:checked)) ~ .list2 {
+  opacity: 0;
+  transform: translateY(3rem);
+  margin-top: -100%;
+  user-select: none;
+  height: 0px;
+  max-height: 0px;
+  min-height: 0px;
+  pointer-events: none;
+  transition: all 500ms ease-out;
+}
+
+.trigger2 {
+  cursor: pointer;
+  list-style: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  font-weight: 600;
+  color: inherit;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  gap: 1rem;
+  padding: 1rem;
+  height: max-content;
+  position: relative;
+  z-index: 90;
+  border-radius: inherit;
+  background-color: white;
+}
+.sr-only2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.dropdown2 input:where(:checked) + .trigger2 {
+  margin-bottom: 1rem;
+}
+.dropdown2 input:where(:checked) + .trigger2:before {
+  rotate: 90deg;
+  transition-delay: 0ms;
+}
+.dropdown2 input:where(:checked) + .trigger2::after {
+  content: "Close Dropdown";
+}
+
+.trigger2:before,
+.trigger2::after {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trigger2:before {
+  content: "›";
+  rotate: -90deg;
+  width: 17px;
+  height: 17px;
+  color: #262626;
+  border-radius: 2px;
+  font-size: 26px;
+  transition: all 350ms ease;
+  transition-delay: 85ms;
+}
+.trigger2::after {
+  content: "Eternal Security";
+}
+
+.list2 {
+  height: 100%;
+  max-height: 20rem;
+  width: calc(100% - calc(var(--w-scrollbar) / 2));
+  display: grid;
+  grid-auto-flow: row;
+  overflow: hidden auto;
+  gap: 1rem;
+  padding: 0 1rem;
+  margin-right: -8px;
+  --w-scrollbar: 8px;
+}
+.listitem2 {
+  height: 100%;
+  width: calc(100% + calc(calc(var(--w-scrollbar) / 2) + var(--w-scrollbar)));
+  list-style: none;
+}
+
+/* List Item 4 */
+.dropdown3 { 
+  border: 1px solid #c1c2c5;
+  border-radius: 12px;
+  transition: all 300ms;
+  display: flex;
+  flex-direction: column;
+  min-height: 58px;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  inset-inline: auto;
+  max-width: 800px;
+  min-width: 298px;
+  margin-top: 25px;
+}
+.dropdown3 input:where(:checked) ~ .list3 {
+  opacity: 1;
+  transform: translateY(-3rem) scale(1);
+  transition: all 500ms ease;
+  margin-top: 32px;
+  padding-top: 4px;
+  margin-bottom: -32px;
+}
+.dropdown3 input:where(:not(:checked)) ~ .list3 {
+  opacity: 0;
+  transform: translateY(3rem);
+  margin-top: -100%;
+  user-select: none;
+  height: 0px;
+  max-height: 0px;
+  min-height: 0px;
+  pointer-events: none;
+  transition: all 500ms ease-out;
+}
+
+.trigger3 {
+  cursor: pointer;
+  list-style: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  font-weight: 600;
+  color: inherit;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  gap: 1rem;
+  padding: 1rem;
+  height: max-content;
+  position: relative;
+  z-index: 90;
+  border-radius: inherit;
+  background-color: white;
+}
+.sr-only3 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.dropdown3 input:where(:checked) + .trigger3 {
+  margin-bottom: 1rem;
+}
+.dropdown3 input:where(:checked) + .trigger3:before {
+  rotate: 90deg;
+  transition-delay: 0ms;
+}
+.dropdown3 input:where(:checked) + .trigger3::after {
+  content: "Close Dropdown";
+}
+
+.trigger3:before,
+.trigger3::after {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trigger3:before {
+  content: "›";
+  rotate: -90deg;
+  width: 17px;
+  height: 17px;
+  color: #262626;
+  border-radius: 2px;
+  font-size: 26px;
+  transition: all 350ms ease;
+  transition-delay: 85ms;
+}
+.trigger3::after {
+  content: "The Church";
+}
+
+.list3 {
+  height: 100%;
+  max-height: 20rem;
+  width: calc(100% - calc(var(--w-scrollbar) / 2));
+  display: grid;
+  grid-auto-flow: row;
+  overflow: hidden auto;
+  gap: 1rem;
+  padding: 0 1rem;
+  margin-right: -8px;
+  --w-scrollbar: 8px;
+}
+.listitem3 {
+  height: 100%;
+  width: calc(100% + calc(calc(var(--w-scrollbar) / 2) + var(--w-scrollbar)));
+  list-style: none;
+}
+
+
+
+/* list */
+.list {
+  height: 100%;
+  max-height: 20rem;
+  width: calc(100% - calc(var(--w-scrollbar) / 2));
+  display: grid;
+  grid-auto-flow: row;
+  overflow: hidden auto;
+  gap: 1rem;
+  padding: 0 1rem;
+  margin-right: -8px;
+  --w-scrollbar: 8px;
+}
+
+.listitem {
+  height: 100%;
+  width: calc(100% + calc(calc(var(--w-scrollbar) / 2) + var(--w-scrollbar)));
+  list-style: none;
+}
+
+.article {
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: justify;
+  width: 100%;
+  border: 1px solid #c1c2c5;
+  display: inline-block;
+  background-color: white;
+}
+
+.webkit-scrollbar::-webkit-scrollbar {
+  width: var(--w-scrollbar);
+  height: var(--w-scrollbar);
+  border-radius: 9999px;
+}
+.webkit-scrollbar::-webkit-scrollbar-track {
+  background: #0000;
+}
+.webkit-scrollbar::-webkit-scrollbar-thumb {
+  background: #0000;
+  border-radius: 9999px;
+}
+.webkit-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: #c1c2c5;
+}
+
 
 
 
