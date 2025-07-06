@@ -315,6 +315,16 @@ body {
     margin: auto;
 }
 
+.mb-contact {
+  margin-bottom: 2rem;
+}
+
+.card-image {
+  height: 50px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .people, .people2, .people3 {
     min-height: 360px;
     padding-top: 2rem;
@@ -489,8 +499,8 @@ footer {
 
 /* Beliefs Page*/
 
-.beliefs {
-    margin-top: 100px;
+.beliefs, .contact {
+    margin-top: 150px;
     margin-bottom: 100px;
 }
 
